@@ -1,33 +1,38 @@
 
 import './App.css';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   // Link,
 } from "react-router-dom";
 import Home from './components.js/Home'
 import About from './components.js/About'
-import Navbar from './components.js/NavBar'
+import Projects from './components.js/Projects'
+import Contact from './components.js/Contact';
+import NavBar from './components.js/NavBar';
 
 function App() {
   return (
-    <div className="App">
-   <Router>
-    <Navbar />
+    <BrowserRouter>
+ 
+      {/* <h1 class="font-bold underline"> 
+        Krystle Mitchell Portfolio</h1> */}
+    <NavBar />
       <Routes>
 
-      <Route path="/" element ={<Home />} />
-      <Route path = "/about" element={<About/>} />
+      <Route to='/' element={<Home />} />
+      <Route to='/about' element={<About />} />
+      <Route to='/contact' element={<Contact />} />
+      <Route to='/projects' element={<Projects />} />
+    
 
     </Routes>
 
-   </Router>
-      <h1 class="font-bold underline"> 
-        Krystle Mitchell Portfolio</h1>
-        {/* <Link to="about">My Profile</Link> */}
+  
+     
     
-    </div>
+    </BrowserRouter>
    
      
 
