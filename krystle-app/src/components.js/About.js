@@ -7,6 +7,7 @@ const About = () => {
         <div className='pages'>
           
             <h1> About Me</h1>
+        <p>Writer turned coder, Learn more about how I got into coding. </p>
 
         </div>
     )
