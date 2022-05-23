@@ -4,7 +4,10 @@ const Projects = () => {
 return (
 
 <div className="pages">
-    Projects Page
+   <h2>
+       Projects Page
+        </h2> 
+        
 </div>
 )
 }
