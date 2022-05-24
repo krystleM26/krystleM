@@ -6,6 +6,8 @@ body {
   box-sizing: border-box;
   font-family: "Arimo", sans-serif;
   background-color: ivory;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .pages {

@@ -29,21 +29,21 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact Me! </h2>
+      <h2>Contact Me!</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='label'>
           <label>Name:</label>
-          <input type="text" name="name" value={formInputs.name}  onChange={handleChange} required />
+          <input   type="text" name="name" value={formInputs.name}  onChange={handleChange} required  placeholder='Name'   />
         </div>
-        <div>
-          <label>email:</label>
-          <input type="text"  name="email" value={formInputs.email}  onChange={handleChange} required />
+        <div className='label'>
+          <label>Email:</label>
+          <input type="text"  name="email" value={formInputs.email}  onChange={handleChange} required  placeholder='Email Address'/>
         </div>
-        <div>
+        <div className='label'>
           <label>Message:</label>
-          <textarea type="text"  name="message" value={formInputs.message}
+          <textarea maxlength='250' type="text"  name="message" value={formInputs.message}
           onChange={handleChange}
-           required />
+           required  placeholder='Note'></textarea>
         </div>
         <button type='submit' value = 'Submit'>Submit</button>
       </form>
