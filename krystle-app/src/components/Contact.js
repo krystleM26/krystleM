@@ -4,9 +4,7 @@ import React, { useState} from 'react';
 
 
 function Contact() {
-    // const [ name, setName] = useState('')
-    // const [ email, setEmail] = useState('')
-    // const [message, setMessage] = useState('')
+
     const [formInputs, setFormInputs  ] = useState({
         name: '',
         email: '',
@@ -31,6 +29,7 @@ function Contact() {
     <div className="contact">
       <h2>Contact Me!</h2>
       <form onSubmit={handleSubmit}>
+          <div className='contactData'>
         <div className='label'>
           <label>Name:</label>
           <input   type="text" name="name" value={formInputs.name}  onChange={handleChange} required  placeholder='Name'   />
@@ -44,6 +43,7 @@ function Contact() {
           <textarea maxlength='250' type="text"  name="message" value={formInputs.message}
           onChange={handleChange}
            required  placeholder='Note'></textarea>
+        </div>
         </div>
         <button type='submit' value = 'Submit'>Submit</button>
       </form>
